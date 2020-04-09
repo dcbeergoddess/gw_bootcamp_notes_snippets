@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+
+for( var i = 0; i < myFarm.length; i++){
+
+    
+    var currentAnimal = myFarm[i];
+
+    //since cuurrentAnimal = myFarm[i] replace where applicable
+   
+    console.log(currentAnimal);
+    console.log(myFarm[i][0]);
+    console.log(myFarm[i].charAt(0));
+
+    if( myFarm[i][0] === "c" || myFarm[i][0] === "o"){
+      console.log("begins with c or o");
+    }
+}
+  
+  </script>
+</body>
+</html>

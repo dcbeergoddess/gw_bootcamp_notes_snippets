@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+var myFarm = ["Chickens", "pigs", "cows", "horses", "Ostriches"];
+
+
+for( var i = 0; i < myFarm.length; i++){
+
+    
+    var currentAnimal = myFarm[i];
+
+    console.log(currentAnimal);
+    console.log(myFarm[i][0]);
+    console.log(myFarm[i].charAt(0));
+
+    var firstLetter = myFarm[i][0];
+    // create variable for firstLetterLC
+    var firstLetterLC = firstLetter.toLowerCase();
+
+// change in loop
+    if( firstLetterLC === "c" || firstLetterLC === "o"){
+      console.log("begins with c or o");
+    }
+}
+  
+  </script>
+</body>
+</html>

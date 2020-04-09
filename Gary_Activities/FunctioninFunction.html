@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Write a function that takes two arguments, a first name and a last name 
+    
+  
+    // the arguments are going to be supplied via down below. not prompting to imput name
+    function showName(firstName, lastName) {
+      console.log("Welcome " + firstName + " " + lastName);
+      // call a captureEmail function within a this function instead of writing code again
+      captureEmail(firstName)
+      
+    }
+    // The function should then console.log "Welcome, <firstname> <lastname>"
+    // That function should then call another function, into which it should pass the first name.
+    // In the second function, prompt the user for an email address
+    
+    // var email = prompt("What is your Email?");
+
+    function captureEmail (firstName){
+      var email = prompt("What is your email address?");
+      console.log(firstName + "'s email address is: " + email)
+    } 
+    // passing this info into arguments
+    showName("Rachel", "Murray");
+    captureEmail("Bob");
+
+
+
+      
+    // Console log "<firstname>'s email address is <email>"
+    // Call the first function 
+    // Call the second function
+    // You should end up with THREE console.log statements
+
+    
+
+  </script>
+</body>
+</html>

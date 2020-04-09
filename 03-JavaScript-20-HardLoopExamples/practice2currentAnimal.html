@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+
+for( var i = 0; i < myFarm.length; i++){
+
+    // console.log(myFarm[i]);
+
+    // First create a different variable for the animal itself
+    var currentAnimal = myFarm[i];
+    // console log out to make sure getting correct value
+    console.log(currentAnimal);
+
+    // render out first letter of each one since create varialbe for animal itself
+
+    console.log(currentAnimal[0]);
+    // same
+    console.log(currentAnimal.charAt(0));
+
+    if( currentAnimal[0] === "c" || currentAnimal[0] === "o"){
+      console.log("begins with c or o");
+    }
+
+  // if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+  // alert("Starts with a c or an o!")
+  //     }     
+}
+  
+  </script>
+</body>
+</html>

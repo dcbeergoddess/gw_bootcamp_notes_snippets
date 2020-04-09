@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary's Pizza Shop</title>
+</head>
+<body>
+  
+ <!-- USE ID and no CLASS outside of script in body-->
+  <h1 id="final-tag"></h1>
+  
+  <script type="text/javascript">
+
+  // Crate a variable ot haold the final value of all orders shipped
+  // outside of loop, should get
+
+  var orderSHippedValue = 0;
+
+  // sort of making a placeholder 
+  // must always be document.getElementID
+  // Can do as many as these as you need for tags
+
+    var hlTag = document.getElementID("final-msg");
+
+// add argument
+    function processOrder(name, itemsPurchased, timeUntilDelivery){
+      console.log(name + " just placed an order.");
+      // Let's calculate total cost. We start at 0.
+      var totalCost = 0;
+      // loop through all the prices in the array and add them to totalCost
+      for (var i = 0; i < itemsPurchased.length; i++ ){
+        totalCost += itemsPurchased[i]  // totalCost = totalCost + itemsPurchased[i]
+      }
+      // Now let's console.log out that subtotal
+      console.log("Cost before tax is $" + totalCost);
+      // Now let's add the tax
+      totalCost = totalCost + ( totalCost * .05 );
+      // console.log the final total
+      console.log("The final order total is: $" + totalCost);
+      var okToPurchase = confirm("Your final cost is $" + totalCost + ". Ok to purchase?");
+      if( okToPurchase ){
+        console.log("Make those pizzas!");
+      } else {
+        console.log("Another cheap customer.");
+      }
+        console.log("Order will be delivered in " + timeUntilDelivery + " minutes.");
+        orderSHippedValue <= totalCost 
+    }
+    var str = "All order have been processed."  
+      h1Tag.textContent = str; 
+     
+      
+
+         // added in this exercise
+
+         
+  
+    
+    
+    
+    // how many minutes will pizza take
+
+    // Now let's call this function for every order I receive. passsing in name, stuff they ordered, and minutes till delivery
+    processOrder("Mary Jones", [3, 5, 4.50, 8], 10);
+    processOrder("John Smith", [4, 2.20, 7, 10], 30);
+    processOrder("Harry Henderson", [9.10, 21.45, 3.15], 35);
+
+
+    console.log("Here's howmuch money we made: $" + ordersShippedValue)
+
+    // Important for HOMEWORK
+    // essentional a 
+    // KEY VALUE PAIRS
+    // has nothing to do with making a pizza
+    
+    var arr = [];
+    for(var i = 1; i <= 10; i++) {
+      arr.push(i);
+    }
+    console.log(arr)
+
+    // switch statement
+    // can replace if, else 
+    // can put function in switch statements
+    // don't forget break
+
+    var studentName = "gary";
+    switch (studentName){
+      case "gary":
+        console.log("This dude deserves an A")
+        break;
+
+      case "dan":
+        console.log("This dude deserves a B+");
+        break;
+
+      case "erik":
+        console.log("This dude deserve a B+")
+        break; 
+// catch all 
+      default:
+        console.log("someone else");    
+    }
+
+
+
+
+
+    // math.round for two decimal places
+  </script>
+</body>
+</html>
