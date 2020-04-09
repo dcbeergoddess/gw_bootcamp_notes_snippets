@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic Variable Assignment</title>
+  </head>
+  <body>
+
+    <!-- Note the script tag here as well as the "text/javascript" -->
+    <!-- When we write JavaScript in HTML, it must be contained within a <script> tag. -->
+
+       <script type="text/javascript">
+
+      // Variables can be strings, numbers, or booleans (true / false)
+      // using var is outdated. we will work with it at first but should shift over to newer way. more modern code uses the other way. different way to declare variables.
+                  // const (var is closer to this than it is to let)
+                 // let
+      var name = "Snow White";
+      var dwarfCount = 7;
+      var isSleeping = true;
+      
+      // JavaScript won't do anything on the page until you tell it too
+      // ALWAYS HAVE DEV CONSOLE OPEN
+
+      alert("Welcome: " + name);
+          // use alert with open parentheses. Once/Anytime you have a string value JavaScript knows thats the + will join the strings together instead of adding  
+          // concatenation
+      
+
+      // CONDITIONALS
+
+      // Here we create our prompt and confirm variables which will store user input.
+      var confirmSushi = confirm("Do you like sushi?");
+      var confirmGingerTea = confirm("Do you like Ginger Tea?");
+      var sushiType = prompt("What kind of sushi do you like?");
+
+      // If the user likes sushi (confirmSushi === true), we run the following block of code within brackets
+
+      // first conditional statement: Do they like sushi
+      if (confirmSushi) {
+        alert("You like " + sushiType + "!");
+      }
+      // If the user likes ginger tea (confirmGingerTea === true), we run the following block of code.
+
+      // second conditional statement: Do they NOT like sushi BUT like ginger tea
+      else if (confirmGingerTea) {
+        alert("You like ginger tea!!");
+      }
+      // If neither of the previous condition were true, we run the following block of code.
+
+      // third conditional statement if first two are false: Do they NOT like sushi AND NOT like ginger tea
+      else {
+        alert("You don't like sushi or ginger tea.");
+      }
+    </script>
+
+    <!-- This will link seperate script.js file. Can have both but whichever comes first in the HTML file will be prioritized -->
+    <script scr="scrip.js" type="text/javascript"></script>
+
+  </body>
+</html>

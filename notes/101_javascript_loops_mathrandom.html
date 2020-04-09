@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+      
+      // Loop 10 times
+      for (var i = 0; i < 10; i++) {
+// Generate a random decimal number between 0 and 1
+        var num = Math.random();
+
+        // Display in console
+        console.log(num);
+      }
+
+// use above code to generate number between 0 and 3
+
+        // Loop 10 times
+        for (var i = 0; i < 10; i++) {
+        // Generate a random decimal number between 0 and 3
+        var num = (Math.random() * 3);
+
+        // Display in console
+        console.log(num);
+      }
+
+// generate number between 1 and 3
+
+          // Loop 10 times
+          for (var i = 0; i < 10; i++) {
+        // Generate a random decimal number between 1 and 3 
+        // add + 1 
+        var num = (Math.random() * 3) + 1;
+
+        // Display in console
+        console.log(num);
+      }
+
+// generate number between 1 and 3 w/ no decimals
+
+          // Loop 10 times
+          for (var i = 0; i < 10; i++) {
+        // Math.floor rounds 
+        var num = Math.floor((Math.random() * 3) + 1);
+
+        // Display in console
+        console.log(num);
+      } 
+
+// generate number between 1 and 10 w/ no decimals
+      // Loop 10 times
+      for (var i = 0; i < 10; i++) {
+        // Generate a random decimal number between 1 and 3 w/ no decimal
+        var num = Math.floor((Math.random() * 10) + 1);
+
+        // Display in console
+        console.log(num);
+      }
+
+// Gary Snippet example      
+      // Loop 10 times
+      for (var i = 0; i < 10; i++) {
+        // Gary snippet. random 1 to 10
+        var max = 10;
+        var min = 1;
+        var num = Math.floor(Math.random() * (max - min + 1) + min);
+
+        // Display in console
+        console.log(num);
+      }
+///////////// push into array /////////////////
+  // Creating an empty array for our favorite TV shows.
+  var favTVshows = [];
+      var tvShow;
+
+      // For-Loop that will repeat three times.
+      for (var i = 1; i < 4; i++) {
+
+        // Each time it asks the user for their #1, #2, or #3 TV show.
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // It then takes the user's response and "pushes" (or adds) the variable to the end of the favTVshows array.
+        favTVshows.push(tvShow);
+      }
+
+
+      // We then loop through the favTVshows array...
+      for (var j = 0; j < favTVshows.length; j++) {
+
+        // ...and create alert messages listing out each show in our array.
+        alert(favTVshows[j]);
+      }
+      
+  </script>
+</body>
+</html>

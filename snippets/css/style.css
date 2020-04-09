@@ -1,0 +1,68 @@
+/* apply background color to body of page */
+/* remove space so heading goes all the way up to page with zeroing out margin and zeroing out any padding that exists around the edges */
+/* Add font family, decides what fonts will appear on page */
+/* define font size to be used if we don't specify a different size */
+/* line-height: determins how much space is around your lines */
+body {
+  background-color: #efeee7;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+/* Student Bio: make text the color of the background. Make background the color of the text */
+/* zero out margins on heading on student bio */
+/* slign text to center and adjust padding. notice background color expands around text */
+/* change font size of h1 and h2 headings */
+h1 {
+  color: #efeee7;
+  background-color: #333;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px
+}
+
+/* make all links red */
+
+a {
+  color: red;
+}
+
+/* container holding all info */
+/* set width, take away any margins and auto center */
+
+.container {
+  width: 1024px;
+  margin: 0 auto; 
+}
+
+/* get elements next to each other by floating */
+/* float all elements to the left most side of it's container and let other elements flow around it */
+#main-bio, #contact-bio, #bio-image {
+  float: left; 
+}
+
+/* get all elements on same row by assigning widths that equal to 100% */
+
+#main-bio {
+  width: 70%;
+}
+
+#contact-info {
+  width: 30%;
+}
+
+/* set picture to be further away from text and stays 200x200 pixels */
+#bio-image {
+  margin-right: 20px;
+  width: 200px;
+  height: 200px;
+}

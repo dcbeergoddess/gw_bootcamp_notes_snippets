@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+FIND DETAILED NOTES IN notes/101_html.html
+
+EVERYTHING MUST GO INTO <form>tags to be submitted</form> 
+
+<form>
+
+<!-- NAME -->
+  <div>
+    <input type="text" name="firstName" placeholder="John" value=""/>
+  </div>
+
+  <div>
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" placeholder="John" value="">
+  </div>
+
+  <div>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" placeholder="John" value="e.g" title="enter your first name"/>
+  </div>  
+    
+
+<!-- PASSWORD -->
+
+  <div>
+    <label for="password">Password</label>
+    <input type="Password" name="password" placeholder="password" value="e.g"/>
+  </div>      
+
+<!-- EMAIL -->
+  <div>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" placeholder="e.g. bob@gmail.com" value=""/>
+  </div>      
+
+<!-- NUMBERS -->
+  <div>
+    <label for="number">Number</label>
+    <input type="number" name="number" placeholder="666" value=""/>
+  </div>
+
+<!-- DROPDOWN -->
+
+  <div>
+    <label for="gender">Gender</label>
+    <select name="gender">
+      <option value="">Option</option>
+      <option value="F">Female</option>
+      <option value="M">Male</option>
+    </select>
+  </div>
+
+<!-- indication they have already provided -->
+
+  <div>
+    <label for="gender">Gender</label>
+    <select name="gender">
+      <option value="">Option</option>
+      <option value="F" selected="selected">Female</option>
+      <option value="M">Male</option>
+    </select>
+  </div>
+
+<!-- Radio buttons -->
+  <!-- Select One Option -->
+ 
+  <div>
+    <label>What is your favorite color?</label>
+    <input type="radio" name="color" value="blue"> Blue 
+    <input type="radio" name="color" value="red"> Red
+    <input type="radio" name="color"> Green 
+  </div>
+
+<!-- Previously Selected -->
+
+  <div>
+    <label>What is your favorite color?</label>
+    <input type="radio" name="color" value="blue"> Blue 
+    <input type="radio" name="color" value="red" checked> Red
+    <input type="radio" name="color" value="green"> Green 
+  </div>
+
+<!-- Checked Boxes -->
+  <!--select multiple-->
+   
+  <div>
+    <label for="color">What is your favorite color?</label>
+    <input type="checkbox" name="color" value="blue"> Blue 
+    <input type="checkbox" name="color" value="red"> Red
+    <input type="checkbox" name="color" value="green"> Green 
+  </div>
+
+<!-- Previously Selected -->
+
+  <div>
+    <label for="color">What is your favorite color?</label>
+    <input type="checkbox" name="color" value="blue" checked> Blue 
+    <input type="checkbox" name="color" value="red" checked> Red
+    <input type="checkbox" name="color" value="green"> Green 
+  </div>
+
+<!-- Text Areas -->
+
+  <div>
+    <label for="bio">Bio</label>
+    <textarea name="bio">
+    </textarea> 
+  </div>
+
+  <div>
+    <label for="bio">Bio</label>
+    <textarea name="bio">
+my name is dan and i have a great beard
+    </textarea> 
+  </div>
+
+  <!-- in past use col and rows to style textarea. usually do it with height and width in style sheet -->
+
+  <div>
+    <label for="bio">Bio</label>
+    <textarea name="bio"cols="80" rows="5">
+my name is dan and i have a great beard
+    </textarea> 
+  </div>
+
+<!-- Submit Form  -->
+  <!-- build 98% of time this way -->
+
+  <button type="submit">Submit Form</button>
+
+<!-- Old Way Submit -->
+
+  <input type="submit" value="Submit Form">
+
+</form>
+
+</body>
+</html>

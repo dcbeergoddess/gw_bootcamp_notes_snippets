@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    // for loop
+
+
+    `for (initialization; condition; final expression) {
+        // code to be executed
+        }`
+
+    // Creating an array of vegetables.
+    var vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+
+    // Looping through each item in the array and logging a message to the console.
+
+          // set starting point at 0 (i = 0);
+          // loop through array as long as i is less than 4 (vegetables.length = 4);
+          //i++ (incrementing by 1, adding 1 to whatever our index is) (after we are done going through, how are we incremeting i)
+          //i+2 skip by 2
+    for (var i = 0; i < vegetables.length; i++) {
+      console.log(i)
+      console.log("I love " + vegetables[i]);
+    }
+      // first time through i will equal 0
+        // next time i will equal 1
+        // next time i will equal 2
+        // etc.
+        // can add twenty more items to array and this code will stil work!!!
+    /* Cosole Log will look like this
+      0
+      I love Carrots
+      1
+      I love Peas
+      2
+      I love lettuce
+      3
+      I love Tomatoes
+      */
+
+   // Array of zoo animals.
+   var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
+
+    // Rewrite the following code to print all of the animals using a for-loop.
+    console.log(zooAnimals[0]);
+    console.log(zooAnimals[1]);
+    console.log(zooAnimals[2]);
+    console.log(zooAnimals[3]);
+    // same thing - don't forget ; inside for (), you are creating 3 different statements on one line
+    for( var i = 0; i < zooAnimals.length; i++){
+        console.log(zooAnimals[i]);
+      }
+      // This is also the same as above 
+      // when going through loop useful if you are going to have a bunch of different statement inside this loop that will use this value
+    for( var i = 0; i < zooAnimals.length; i++){
+      var currentAnimal = zooAnimals[i];
+      console.log(currentAnimal);
+      }  
+
+      // put s after each animal in console log
+      // for starts loop
+      // anything inside paraentheses is setting up how this loop is going to work
+      // (where loop starts; how far through loop do we to go; how are we going to increment i when going through loop)
+
+      for( var i = 0; i < zooAnimals.length; i++){
+      var currentAnimal = zooAnimals[i];
+      // join stuff together concatenation
+      console.log("I love " + currentAnimal + "s");
+      }
+
+      // NUMBER LOOP //////////////
+
+      // Loops from 0-4
+    for (var i = 0; i < 5; i++){
+      console.log("I am " + i);
+    }
+            // (var i = 0; i < 5; i++) 
+            // or (var i = 0; i <= 4; i++)
+
+//////////////////////Hard Loop Activity JavaScript////////////////////////////
+    var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+// Loop through Array 
+    for( var i = 0; i < myFarm.length; i++){
+      // console log out each animal as you loop through array
+      console.log(myFarm[i]);
+      // console out animals that begin with c or o
+      //then check first letter in animal name one way using charAt (characterAt) which works on string element
+      //* **HINT:** You can access the first character of a string as if it were the first element of an array.
+      if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+        alert("Starts with a c or an o!");
+      }   
+    }
+
+    // another way to grab first letter
+
+var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+
+
+
+  for( var i = 0; i < myFarm.length; i++){
+ 
+      console.log(myFarm[i]);
+
+      var currentAnimal = myFarm[i];
+      console.log(currentAnimal);
+
+    // if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+    // alert("Starts with a c or an o!")
+    //     }     
+  }
+   
+  // LOOK IN PRACTICE FOR HARDLOOP TO SEE VARIOUS WAYS TO DO ABOUT CODE!!!!
+
+      
+  </script>
+</body>
+</html>

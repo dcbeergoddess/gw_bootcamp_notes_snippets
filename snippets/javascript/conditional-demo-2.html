@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Conditional Demo 2</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      if (true === true) {
+        alert("hi");
+      }
+      else {
+        alert("bye");
+      }
+
+      if (false === false) {
+        alert("dude");
+      }
+      else {
+        alert("nope");
+      }
+
+      if ("4" === 4) {
+        alert("puppies");
+      }
+      else {
+        alert("goats");
+      }
+
+      if ("4" == 4) {
+        alert("puppies");
+      }
+      else {
+        alert("goats");
+      }
+
+      if (true) {
+        alert("goo goo dolls");
+      }
+      else {
+        alert("vanilla ice");
+      }
+
+      if (false) {
+        alert("the neighborhood");
+      }
+      else {
+        alert("one direction");
+      }
+
+      // JavaScript will join to strings together
+      if (("5" + "5") === "55") {
+        alert("tofu");
+      }
+      else {
+        alert("soybean");
+      }
+      // if one is number and one is string JavaScript will automatically make the string a number and assume you mean to do addition
+      if ((6 + "5") === "65") {
+        alert("richard");
+      }
+      else {
+        alert("branson");
+      }
+
+      // converting numbers to strings
+      var number = parseInt(stringValue)
+      // or
+      var number = (stringValue * 1)
+      // type coersion
+      // JavaScript will see a numeric operator here and automatically convert the whole thing to number and becuase you are multiply it by 1 so it will stay the same 
+
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Meta Tags | Standard charset: | metal tags are for search engines. don't nearly look at this stuff as much anymore --> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 101</title>
+
+ <!-- CSS part -->
+
+ <style>
+
+</style>
+
+</head>
+<body>
+  <!-- Semantics  -->
+
+    <!-- is the study of meaning, and semantic code is essentailly code that carries it’s own meaning. The best example i can give of this is using semantic HTML tags like <section> and <article> rather than just <div> becuase they carry more meaning as to their purpose. Semantic code can also go into a consistant class/ID naming system for HTML and CSS, descriptive function name for JavaScript, or just well organized, commented code. In short, when it says you should “understand the importance of semantic code” it’s saying you should have consistent, descriptive, and readable code. -->
+
+<!-- SECTION | DIV USES -->
+      <!-- One Section For Name, Address, Etc. put divs around name and address if you want to style them differently later. search engine knows these items are related-->
+    <section>
+      <div>
+        Name 
+      </div>
+      <div>
+        Address>
+      </div>
+    </section>
+
+      <!-- One Section for Bio -->
+    <section>
+      <p>here is my bio</p>
+    </section>
+
+    <!-- One Section for Cool Stuff -->
+    <section>
+      <ul>
+        <li>First Cool Thing</li>
+        <li>Second Cool Thing</li>
+      </ul>
+    </section>
+
+  
+
+  <!-- Main -->
+
+    <!-- telling search engines this is the real purpose of this page generally only one main tag per page more important than meta tab and keywords these days. Displays to user as well-->  
+
+  <main> important tag </main> 
+
+  <!-- Header: Semantic: describes the processes a computer follows when executing a program in that specific language.-->
+
+  <header> Not as important but still at top of page. Look up </header>
+  <!-- Headings -->
+  <h1>Hello, World!</h1>
+  <h2>Heading</h2>
+  <h3>Heading</h3>
+  <h4>Heading</h4>
+  <h5>Heading</h5>
+  <h6>Heading</h6>
+
+  <!-- Images
+  Self closing tag: everything that is need for image is contained in that first tag 
+  src = source file
+  alt = alternative text/tells what the image is about (screen readers, etc)
+  width/height: are provided as attributes
+  -->
+ 
+  <img src="http://en.spongepedia.org/images/thumb/3/33/Spongebob!!!.jpg/180px-Spongebob!!!.jpg" alt="Spongbob!"/>
+  <br>
+
+  <!-- Link with New Tab -->
+  <!-- target is an attribute -->
+  <!-- 2 path: 
+    absolute (no matter what file you are in it will bring you there, i.e, wwww.google.com)
+    relative (references files on your computer)-->
+
+  <a href="https://www.google.com" target="_blank">Opens new tab</a>
+  <br>
+
+  <!-- Bold Link -->
+
+  <strong><a href="https://www.youtube.com">This is a bold link</a></strong>
+  <br>
+
+  <!--Placeholder link-->
+  <!-- used to style around -->
+
+  <a href="#">This is a placeholder link, goes no where, for now</a>
+  <br>
+
+  <h2>Youtube</h2>
+
+  <!-- iframe element -->
+  <iframe id="ytplayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com" frameborder="0" ></iframe>
+  <br>
+
+  <!-- Paragraphs -->
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, explicabo aspernatur? Animi minima debitis eum! Consequatur aliquam totam corrupti accusamus recusandae doloremque, neque magni corporis nam debitis nobis sint alias!</p>
+
+  <!-- Divs -->
+
+  <div>
+    enter and then indent and then put content. Tag invisible until you give extra details to div tags but not visible to user. Doesn't look any different until you use it for something. Use it to apply to that whole line of code.
+  </div>
+
+  <!-- HTML Buttons -->
+
+  <button> this is a button </button>
+
+  <!-- HTML Lists -->
+
+  <ul> unordered/bullet List
+  <ol> ordered/numbered list 
+  <li> list items
+
+  <!-- Example -->
+
+    <ul>
+      <li>cofee</li>
+      <li>tea</li>
+      <li>milk</li>
+    </ul>
+
+  <!-- Tables Gary Demo -->
+    <!-- Tabular Data | Colums and Rows of Data -->
+    <!-- Used to be use for layout but no longer!! -->
+
+    <table>
+  <!-- First Part: Table Head -->
+      <!-- Heading of Table: Define Columns : Not Actual Data <th> used within tags-->
+  <!-- Second Part: Create a Row -->
+      <!-- Any time you create a new table row, you will have columns within that row -->
+        <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>E-mail Address</th>
+        </tr>
+      </thead>
+  <!-- Put in Data. Make sure outside thead -->
+    <!-- Rows within body and 3 columns of info -->
+      <tbody>
+        <tr>
+          <td>Bob</td>
+          <td>Jones</td>
+          <td>bobjones@gmail.com</td>
+        </tr>
+      </tbody>
+
+      <tbody>
+        <tr>
+          <td colspan="2">Jane Smith</td>
+          <td>Jane Smith@gmail.com</td>
+        </tr>
+      </tbody>
+  <!-- Third Part: footer -->
+      <!-- don't do much with it. might see paganation. here's the first 50 rows click here to see the next 50 rows -->
+      <tfoot>
+        <tr>
+  <!--  want what goes in footer to span all three columns create column that spans -->
+          <td colspan="3"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente rem odio est? Id saepe praesentium nulla dolorem accusamus repudiandae nostrum est nam vero perferendis in fugiat harum, eligendi at fuga.</td>
+
+        </tr>
+      </tfoot>
+    </table>  
+    
+<!-- Table Lessons Version -->
+  <h2>Table</h2>
+  <table style="width: 100%">
+<!-- Row 1 -->
+    <tr>
+      <th>Animal Class</th>
+      <th>Animal Name</th>
+    </tr>
+<!-- Row 2 -->
+    <tr>
+      <td>Mammal</td>
+      <td>Hyena</td>
+    </tr>
+<!-- Row 3 -->
+    <tr>
+      <td>Reptile</td>
+      <td>Iguana</td>
+    </tr>
+ <!-- Row 4 -->
+    <tr>
+      <td>Mammal</td>
+      <td>Chimpanzee</td>
+    </tr>
+<!-- Row 5 -->
+    <tr>
+      <td>Bird</td>
+      <td>Eagle</td>
+    </tr>
+  </table>
+<br>
+<br>
+<br>
+<!-- Forms -->
+<!-- First Part -->
+  <!-- All fields must be in form tags to be submitted to website-->
+
+  <form>
+    <!-- First Part number one element is input field and need many attributes.-->
+      <!-- type: main type is text (letters,numbers,special character, etc) -->
+      <!-- name: anything you want. camel caseing or lowercase usually match up with database-->
+      <!-- placeholder: text appears in field before person types anything into it -->
+      <!-- value: whatever value should currently be in that field. usually blank. might put e.g-->
+      <!-- label: gives information about what they are doing. typically goes about field itself -->
+      <!-- title: for screen readers...check if correct -->
+      <!-- group each element together in some way -->
+
+    <div>
+      <input type="text" name="firstName" placeholder="John" value=""/>
+    </div>
+
+    <div>
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" placeholder="John" value="">
+    </div>
+  
+    <div>
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" placeholder="John" value="e.g" title="enter your first name"/>
+    </div>  
+      
+
+    <!-- 2nd most used value password -->
+    <div>
+      <label for="password">Password</label>
+      <input type="Password" name="password" placeholder="password" value="e.g"/>
+    </div>      
+
+    <!-- email -->
+    <div>
+      <label for="email">E-mail</label>
+      <input type="email" name="email" placeholder="e.g. bob@gmail.com" value=""/>
+    </div>      
+
+    <!-- numbers specify in tag min and max-->
+    <div>
+      <label for="number">Number</label>
+      <input type="number" name="number" placeholder="666" value=""/>
+    </div>
+
+    <!-- Dropdowns -->
+      <!-- select indicates dropdown opening and closing tag -->
+        <!-- indicate options | supply two things with this tag-->
+          <!-- 1 value: if someone selects this option what am I sending into my database -->
+          <!-- 2 display: to user -->
+
+    <div>
+      <label for="gender">Gender</label>
+      <select name="gender">
+        <option value="">Option</option>
+        <option value="F">Female</option>
+        <option value="M">Male</option>
+      </select>
+    </div>
+
+<!-- indication they have already provided -->
+<!-- should be able to use just selected instead of selected="selected" -->
+
+    <div>
+      <label for="gender">Gender</label>
+      <select name="gender">
+        <option value="">Option</option>
+        <option value="F" selected="selected">Female</option>
+        <option value="M">Male</option>
+      </select>
+    </div>
+
+<!-- Radio buttons -->
+    <!-- only allow you to choose/select one option-->
+    <!-- must keep ***name*** the same to only choose one if you change the ***name*** it is a different data element and both can be selected -->
+   
+    <div>
+      <label>What is your favorite color?</label>
+      <input type="radio" name="color" value="blue"> Blue 
+      <input type="radio" name="color" value="red"> Red
+      <input type="radio" name="color"> Green 
+    </div>
+    <!-- indicate what someone selected in past come into play later for when getting data-->
+    <div>
+      <label>What is your favorite color?</label>
+      <input type="radio" name="color" value="blue"> Blue 
+      <input type="radio" name="color" value="red" checked> Red
+      <input type="radio" name="color" value="green"> Green 
+    </div>
+
+<!-- Checked Boxes -->
+    <!--select multiple-->
+      <!-- can use checked if you want someone to sign up for something, etc. -->
+      <!-- sometimes structure get changed around in other frameworks. this is fine if you don't need to do anything fancy. more for styles -->
+    
+    <div>
+      <label for="color">What is your favorite color?</label>
+      <input type="checkbox" name="color" value="blue"> Blue 
+      <input type="checkbox" name="color" value="red"> Red
+      <input type="checkbox" name="color" value="green"> Green 
+    </div>
+
+    <div>
+      <label for="color">What is your favorite color?</label>
+      <input type="checkbox" name="color" value="blue" checked> Blue 
+      <input type="checkbox" name="color" value="red" checked> Red
+      <input type="checkbox" name="color" value="green"> Green 
+    </div>
+
+  <!-- Text Areas -->
+    <!-- need to ask for more than one little line of information-->
+    <!-- don't need value -->
+    <!-- Anything you want to display in tag goes in textarea tags. renders out text religiously. will indent if line is indented.-->
+    <!-- usually styled in style sheets -->
+
+    <div>
+      <label for="bio">Bio</label>
+      <textarea name="bio">
+my name is dan and i have a great beard
+      </textarea> 
+    </div>
+
+    <!-- in past use col and rows to style textarea. usually do it with height and width in style sheet -->
+
+    <div>
+      <label for="bio">Bio</label>
+      <textarea name="bio"cols="80" rows="5">
+my name is dan and i have a great beard
+      </textarea> 
+    </div>
+
+  <!-- Submit Form  -->
+    <!-- build 98% of time this way -->
+    <!-- because we want it submitted type - submitt -->
+  
+    <button type="submit">Submit Form</button>
+
+<!-- Old Way Submit -->
+    <input type="submit" value="Submit Form">
+
+  </form>
+
+
+  </body>
+  </html>
+
+
+
